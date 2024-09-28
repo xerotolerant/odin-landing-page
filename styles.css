@@ -131,3 +131,15 @@ button {
 .cta button {
     border: var(--light-text-color) 1px solid;
 }
+
+footer {
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
+    font-weight: lighter;
+    font-size: 12px;
+    height: 64px;
+    display:flex;
+    justify-content: center;
+
+    align-items: center;
+}
