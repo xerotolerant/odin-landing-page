@@ -61,11 +61,14 @@ header .logo {
     font-weight: lighter;
     margin-bottom: 8px;
 }
-.hero button {
+button {
+
     color: var(--light-text-color);
     background-color: var(--button-color);
     padding: 8px 24px;
     border-radius: 6px;
+}
+.hero button {
     border:none;
 }
 
@@ -109,4 +112,22 @@ header .logo {
     text-align: end;
     font-size: 18px;
     font-weight: bold;
+}
+
+.cta {
+    background-color: var(--button-color);
+    margin: 36px auto;
+    max-width: 768px;
+    padding:36px 36px;
+    color: var(--light-text-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta p {
+    font-weight: lighter;
+}
+
+.cta button {
+    border: var(--light-text-color) 1px solid;
 }
