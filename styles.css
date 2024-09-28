@@ -148,7 +148,7 @@ button {
     background-color: var(--button-color);
     margin: 100px auto;
     max-width: 1024px;
-    padding: 64px;
+    padding: 64px 32px;
     color: var(--light-text-color);
     display: flex;
     justify-content: space-between;
@@ -167,7 +167,7 @@ footer {
     background-color: var(--dark-bg-color);
     color: var(--light-text-color);
     font-weight: lighter;
-    font-size: 12px;
+
     height: 64px;
     display: flex;
     justify-content: center;
