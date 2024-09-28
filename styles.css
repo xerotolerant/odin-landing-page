@@ -1,15 +1,15 @@
-
 :root {
     --dark-bg-color: #1F2937;
     --button-color: #3882F6;
     --quote-section-bg-color: #E5E7EB;
     --light-text-color: #F9FAF8;
     
+
 }
 
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: 'Roboto', 'Helvetica', 'sans-serif';
     box-sizing: border-box;
 }
@@ -17,96 +17,126 @@
 
 header {
     display: flex;
-    justify-content: space-between;
     background-color: var(--dark-bg-color);
     color: var(--light-text-color);
+    padding: 20px 32px;
+}
+header .content {
     align-items: center;
-    padding: 16px 32px;
+}
+.content {
+    display: flex;
+    max-width: 1024px;
+    justify-content: space-between;
+    margin: auto;
+    flex: 1 1 auto;
 }
 
 header ul {
     list-style: none;
     display: flex;
-    gap: 16px;
-    
+    gap: 20px;
+
 }
 
 header a {
     font-size: 18px;
     text-decoration: none;
     color: var(--light-text-color);
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 header .logo {
     font-size: 24px;
-    
+    font-weight: bold;
 }
 
 
 .hero {
     display: flex;
     background-color: var(--dark-bg-color);
-    color: var(--light-text-color);
-    padding: 64px 32px;
-    gap: 16px;
+    color: var(--quote-section-bg-color);
+    padding: 100px 32px;
+}
+.hero .content {
+    gap: 24px;
+
 }
 
+.hero img {
+    flex:1 1 auto;
+    /* width: 230px; */
+}
 .hero h1 {
     font-size: 48px;
     font-weight: 900;
 }
+
 .hero p {
     font-size: 18px;
     font-weight: lighter;
     margin-bottom: 8px;
 }
+
 button {
 
     color: var(--light-text-color);
     background-color: var(--button-color);
-    padding: 8px 24px;
+    padding: 8px 36px;
     border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
 }
+
 .hero button {
-    border:none;
+    border: none;
 }
 
 
 .info {
-    padding: 32px 64px ;
+    padding: 64px 64px;
     text-align: center;
 }
+
 .info h2 {
     color: var(--dark-bg-color);
     font-size: 36px;
     font-weight: 900;
 }
+
 .info .features {
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 64px;
     font-size: 18px;
-    gap:16px;
+    gap: 36px;
 }
 
 .features img {
     width: 175px;
     height: auto;
     border-radius: 16px;
-    border:var(--button-color) 5px solid;
+    border: var(--button-color) 4px solid;
 
 }
+
 .features p {
     width: 175px;
+    font-weight: lighter;
 }
 
 .quote {
     background-color: var(--quote-section-bg-color);
-    padding: 32px;
+    padding: 100px;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
+}
+.content.narrow {
+    max-width:768px;
+}
+.quote .content {
+    flex-direction: column;
 }
 .quote .author {
     text-align: end;
@@ -116,12 +146,13 @@ button {
 
 .cta {
     background-color: var(--button-color);
-    margin: 36px auto;
-    max-width: 768px;
-    padding:36px 36px;
+    margin: 100px auto;
+    max-width: 1024px;
+    padding: 64px;
     color: var(--light-text-color);
     display: flex;
     justify-content: space-between;
+    border-radius: 8px;
 }
 
 .cta p {
@@ -138,7 +169,7 @@ footer {
     font-weight: lighter;
     font-size: 12px;
     height: 64px;
-    display:flex;
+    display: flex;
     justify-content: center;
 
     align-items: center;
